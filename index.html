@@ -67,6 +67,49 @@
 				text-align: left;
 			}
 
+			.form:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.form {
+				margin-left: 25%;
+				width: 50%;
+				text-align: center;
+				border: 1px solid black;
+				background-color:white;
+				margin-bottom: 50px;
+				margin-top: 50px;
+			}
+
+			input[type=text], select, textarea {
+				width: 90%;
+				padding: 12px;
+				box-sizing: border-box;
+				margin-top: 6px;
+				margin-bottom: 16px;
+				resize: vertical;
+			}
+			
+			input[type=submit] {
+				background-color: #24252A;
+				color: white;
+				padding: 12px 20px;
+				margin-bottom: 20px; /*Space between border and button*/
+				border: 1px solid black;
+				cursor: pointer;
+				transition: 0.3s ease 0.1s;
+			}
+			
+			input[type=submit]:hover {
+				background-color: #b45e7b;
+				color: #24252A;
+				font-weight: 700;
+				transition: 0.3s ease 0.1s;
+			}
+
+
 			/*Wraps the whole contents and sets its height to 100% to allow the footer to always appear at the bottom*/
 			.wrapper + body{
 				height: 100%;
@@ -125,6 +168,23 @@
 				</div>
 				<span class="stretch"></span>
 			</div>
+			<div class="form">
+                <form action="/action_page.php">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Name..."><br>
+
+					<label for="subject">Phone</label><br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number..."><br>
+
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="Email..."><br>
+
+                    <label for="message">Message</label><br>
+                    <textarea id="message" name="message" style="height: 150px;" placeholder="Write a message..."></textarea><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </div>
 	</body>
 </html>
