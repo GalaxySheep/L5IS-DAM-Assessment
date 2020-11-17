@@ -109,6 +109,32 @@
 				transition: 0.3s ease 0.1s;
 			}
 
+			footer {
+				width: 100%;
+				padding-top: 15px;
+				margin-top: 30px;
+				padding-bottom: 20px;
+				text-align: center;
+				color: white;
+				background-color: #24252A;
+				display: inline-block;
+			}
+
+			footer img {
+				padding-right: 10px; /*Space between icons and text*/
+				height: 50px;
+				vertical-align: middle; /*Aligns the text with the images*/
+			}
+
+			.icon {
+				display: inline-block;
+				padding-right: 60px; /*Space between the end of text to the next icon*/
+			}
+
+			.icon h4 {
+				display: inline-block;
+				transition: all 0.3s ease 0.1s;
+			}
 
 			/*Wraps the whole contents and sets its height to 100% to allow the footer to always appear at the bottom*/
 			.wrapper + body{
@@ -185,6 +211,20 @@
                     <input type="submit" value="Submit">
                 </form>
             </div>
-        </div>
+		</div>
+		<footer>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179695237398528/facebook-icon.png" alt="facebook"><h4>Facebook</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179697065852938/instagram-icon.png" alt="instagram"><h4>Instagram</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179698358091786/twitter-icon.png" alt="twitter"><h4>Twitter</h4>
+            </div>
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/511733115241234472/778179701532393492/whatsapp-icon.png" alt="whatsapp"><h4>WhatsApp</h4>
+            </div>
+        </footer>
 	</body>
 </html>
