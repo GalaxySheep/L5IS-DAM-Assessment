@@ -22,6 +22,55 @@
 				text-align: center;
 				letter-spacing: 1px;
 			}
+			.rows:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.rows {
+				border: black solid 1px;
+				padding-top: 50px;
+				margin: 30px;
+				padding: 30px;
+				text-align: justify;
+				text-justify: distribute-all-lines;
+			}
+
+			.rows h1 {
+				text-align: center;
+				letter-spacing: 5px;
+			}
+
+			.stretch {
+				width: 100%;
+				display: inline-block;
+				font-size: 0;
+				line-height: 0;
+			}
+
+			.box img {
+				width: 380px;
+				height: 300px;
+			}
+
+			.box.one, .box.two, .box.three {
+				margin-left: 100px;
+				margin-right: 100px;
+				vertical-align: top;
+				display: inline-block;
+				*display: inline;
+				zoom: 1;
+			}
+
+			.box h2 {
+				text-align: left;
+			}
+
+			/*Wraps the whole contents and sets its height to 100% to allow the footer to always appear at the bottom*/
+			.wrapper + body{
+				height: 100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -30,5 +79,52 @@
 			<br>
 			<h1>A mall for Family</h1>
 		</div>
+		<div class="wrapper">
+            <div class="rows">
+                <div class="box one">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/6dcebb4cf75ac317">
+                    <h2>David Jones</h2>
+                </div>
+                <div class="box two">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/17ca104da4afd999">
+                    <h2>Farmers</h2>
+                </div>
+                <div class="box three">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/0eee02a103221d7b">
+                    <h2>MECCA</h2>
+				</div>
+				<span class="stretch"></span>
+            </div>
+            <div class="rows">
+                <div class="box one">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/55a05843c09c1002">
+                    <h2>COS</h2>
+                </div>
+                <div class="box two">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/1f9ed5e6e2c57edd">
+                    <h2>Assembly Label</h2>
+                </div>
+                <div class="box three">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/68f27828d85f55d1">
+                    <h2>Seed Heritage</h2>
+				</div>
+				<span class="stretch"></span>
+			</div>
+			<div class="rows">
+                <div class="box one">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/f6af78db3389258">
+                    <h2>Corner Burger</h2>
+                </div>
+                <div class="box two">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/58c32dbd0927b11">
+                    <h2>White + Wong's</h2>
+                </div>
+                <div class="box three">
+                    <img src="https://res.cloudinary.com/scentre-group-au/image/fetch/c_fill,q_auto,g_faces:auto,w_600,h_400,f_auto/https://cam.scentregroup.io/m/7fac96fb982dd08f">
+                    <h2>Something & Social</h2>
+				</div>
+				<span class="stretch"></span>
+			</div>
+        </div>
 	</body>
 </html>
